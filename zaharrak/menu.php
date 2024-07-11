@@ -57,7 +57,8 @@ if (!isset($_SESSION['username'])) {
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="logout.php" class="btn btn-danger">Logout</a>
+                    <!--<a href="logout.php" class="btn btn-danger">Logout</a>-->
+                    <a href="logout.php?csrf_token=<?php echo $_SESSION['csrf_token']; ?>" class="btn btn-danger">Logout</a>
                 </li>
             </ul>
         </div>
