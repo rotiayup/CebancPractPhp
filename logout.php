@@ -11,6 +11,9 @@ header("Location: index.php");
 <?php
 session_start();
 
+var_dump($_GET['csrf_token'] .' - '. $_SESSION['csrf_token']);
+//die();
+
 // Verify the CSRF token
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     if (!isset($_GET['csrf_token']) || $_GET['csrf_token'] !== $_SESSION['csrf_token']) {
