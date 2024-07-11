@@ -1,0 +1,14 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "dev-master",
+        "google/apiclient": "2.0",
+        "dompdf/dompdf": "^3.0"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/PHPMailer/PHPMailer.git"
+        }
+    ]
+
+}
