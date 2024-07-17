@@ -18,18 +18,25 @@ Para poder acceder a la variables de entorno, necesitamos instalar:
 
 composer require vlucas/phpdotenv
 
-Fichero __db.php__:
-Contiene los datos de conexión necesarios para acceder a la base de datos mysql.
-Sustituir los existentes por los reales.
+Y necesitaremos un fichero llamado __.env__ con las siguientes variables:
+>DDBB_SERVERNAME=localhost (o servidor)
+>DDBB_USERNAME=xxxx
+>DDBB_PASSWORD=xxxx
+>DDBB_DBNAME=xxxxxx
+>EMAIL_HOST=smtp.gmail.com
+>EMAIL_FROM_EMAIL=xxxxxx@gmail.com
+>EMAIL_FROM_NAME="Xxxxx Xxxxxx"
+>EMAIL_PASSWORD=xxxxxxxx
+>EMAIL_FROM_EMAIL2=xxxxxx@gmail.com
+>EMAIL_FROM_NAME2="Xxxxx Xxxxxx"
+>EMAIL_PORT=587
 
-Fichero __config.ini__:
-Contiene los datos de conexión necesarios para poder realizar los envíos de emails.
-Sustituir los existentes por los reales.
+Sustiuir los valores por los reales de conexión.
 
 Hay que seguir unos pasos para poder activar la cuenta xxxxx@gmail.com como emisora de los emails __(Falta documentar!)__
 Una vez activo, insertar los datos en el fichero "config.ini"
 
-Crear la base de datos cebancpractdb.
+Crear la base de datos xxxxxx.
 
 Ejecutar el programa https://miservidor/create_table_user.php para crear la tabla users.
 
