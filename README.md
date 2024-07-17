@@ -1,17 +1,14 @@
 # Crear proyecto php de prueba
 
-Programa proyecto php de prueba.
+Programa proyecto php de prueba.  
 Pasos a seguir para ponerlo en marcha:
 
-Instalar Xampp.
+Instalar Xampp.  
 Arrancar Apache y MySql.
 
-Copiar la carpeta principal en la carpeta ../xampp/htdocs del servidor web.
-
-Si no hemos copiado la carpeta /vendor/ asociada al proyecto, necesitaremos instalar las librerías necesarias para PDF y Mail:
-
-composer require phpmailer/phpmailer
-
+Copiar la carpeta principal en la carpeta ../xampp/htdocs del servidor web.  
+Si no hemos copiado la carpeta /vendor/ asociada al proyecto, necesitaremos instalar las librerías necesarias para PDF y Mail:  
+composer require phpmailer/phpmailer  
 composer require dompdf/dompdf
 
 Para poder acceder a la variables de entorno, necesitamos instalar:
@@ -21,19 +18,19 @@ composer require vlucas/phpdotenv
 Y necesitaremos un fichero llamado __.env__ con las siguientes variables:
 >DDBB_SERVERNAME=localhost (o servidor)  
 >DDBB_USERNAME=xxxx  
->DDBB_PASSWORD=xxxx 
->DDBB_DBNAME=xxxxxx 
->EMAIL_HOST=smtp.gmail.com 
->EMAIL_FROM_EMAIL=xxxxxx@gmail.com
->EMAIL_FROM_NAME="Xxxxx Xxxxxx"
->EMAIL_PASSWORD=xxxxxxxx
->EMAIL_FROM_EMAIL2=xxxxxx@gmail.com
->EMAIL_FROM_NAME2="Xxxxx Xxxxxx"
->EMAIL_PORT=587
+>DDBB_PASSWORD=xxxx  
+>DDBB_DBNAME=xxxxxx  
+>EMAIL_HOST=smtp.gmail.com  
+>EMAIL_FROM_EMAIL=xxxxxx@gmail.com  
+>EMAIL_FROM_NAME="Xxxxx Xxxxxx"  
+>EMAIL_PASSWORD=xxxxxxxx  
+>EMAIL_FROM_EMAIL2=xxxxxx@gmail.com  
+>EMAIL_FROM_NAME2="Xxxxx Xxxxxx"  
+>EMAIL_PORT=587  
 
 Sustiuir los valores por los reales de conexión.
 
-Hay que seguir unos pasos para poder activar la cuenta xxxxx@gmail.com como emisora de los emails __(Falta documentar!)__
+Hay que seguir unos pasos para poder activar la cuenta xxxxx@gmail.com como emisora de los emails __(Falta documentar!)__  
 Una vez activo, insertar los datos en el fichero "config.ini"
 
 Crear la base de datos xxxxxx.
