@@ -12,6 +12,9 @@ Si no hemos copiado la carpeta /vendor/ asociada al proyecto, necesitaremos inst
 composer require phpmailer/phpmailer
 composer require dompdf/dompdf
 
+Para poder acceder a la variables de entorno, necesitamos instalar:
+composer require vlucas/phpdotenv
+
 Fichero __db.php__:
 Contiene los datos de conexión necesarios para acceder a la base de datos mysql.
 Sustituir los existentes por los reales.
