@@ -6,6 +6,10 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use Dompdf\Dompdf;
 
+// Load environment variables
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+/*
 if (!function_exists('getConfig')) {
     function getConfig($filename)
     {
@@ -15,10 +19,30 @@ if (!function_exists('getConfig')) {
         return parse_ini_file($filename, true);
     }
 }
+*/
 
+if (!function_exists('getConfig')) {
+    function getConfig() {
+      // Access environment variables directly
+      $config = [
+        'mail' => [
+          'host' => $_ENV['EMAIL_HOST'],
+          'from_email' => $_ENV['EMAIL_FROM_EMAIL'],
+          'from_name' => $_ENV['EMAIL_FROM_NAME'],
+          'password' => $_ENV['EMAIL_PASSWORD'],
+          'from_email2' => $_ENV['EMAIL_FROM_EMAIL2'],
+          'from_name2' => $_ENV['EMAIL_FROM_NAME2'],
+          'port' => $_ENV['EMAIL_PORT'],
+        ],
+      ];
+      return $config;
+    }
+  }
+  
 function enviar_email_pdf($to_email, $subject, $message, $pdfName)
 {
-    $config = getConfig('config.ini');
+    //$config = getConfig('config.ini');
+    $config = getConfig();
     $mail_config = $config['mail'];
 
     $from_email = $mail_config['from_email'];
