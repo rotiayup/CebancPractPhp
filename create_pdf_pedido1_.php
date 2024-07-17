@@ -1,4 +1,4 @@
-<?phppp
+<?php
 include 'header.php';
 ?>
 <?php
