@@ -19,11 +19,11 @@ Para poder acceder a la variables de entorno, necesitamos instalar:
 composer require vlucas/phpdotenv
 
 Y necesitaremos un fichero llamado __.env__ con las siguientes variables:
->DDBB_SERVERNAME=localhost (o servidor)
->DDBB_USERNAME=xxxx
->DDBB_PASSWORD=xxxx
->DDBB_DBNAME=xxxxxx
->EMAIL_HOST=smtp.gmail.com
+>DDBB_SERVERNAME=localhost (o servidor)  
+>DDBB_USERNAME=xxxx  
+>DDBB_PASSWORD=xxxx 
+>DDBB_DBNAME=xxxxxx 
+>EMAIL_HOST=smtp.gmail.com 
 >EMAIL_FROM_EMAIL=xxxxxx@gmail.com
 >EMAIL_FROM_NAME="Xxxxx Xxxxxx"
 >EMAIL_PASSWORD=xxxxxxxx
