@@ -8,12 +8,13 @@ Arrancar Apache y MySql.
 
 Copiar la carpeta principal en la carpeta ../xampp/htdocs del servidor web.  
 Si no hemos copiado la carpeta /vendor/ asociada al proyecto, necesitaremos instalar las librerías necesarias para PDF y Mail:  
-composer require phpmailer/phpmailer  
-composer require dompdf/dompdf
+
+>__composer require phpmailer/phpmailer__  
+>__composer require dompdf/dompdf__
 
 Para poder acceder a la variables de entorno, necesitamos instalar:
 
-composer require vlucas/phpdotenv
+>__composer require vlucas/phpdotenv__
 
 Y necesitaremos un fichero llamado __.env__ con las siguientes variables:
 >DDBB_SERVERNAME=localhost (o servidor)  
