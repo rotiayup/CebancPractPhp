@@ -1,6 +1,7 @@
 # Crear proyecto php de prueba
 
 Programa proyecto php de prueba.  
+
 Pasos a seguir para ponerlo en marcha:
 
 Instalar Xampp.  
